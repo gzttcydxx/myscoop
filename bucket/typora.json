@@ -1,0 +1,23 @@
+{
+    "version": "0.9.93",
+    "description": "Typora. A truly minimal markdown editor.",
+    "homepage": "https://typora.io",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://support.typora.io/License-Agreement/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "http://42.193.98.65:5244/d/scoop/typora-setup-x64.exe",
+            "hash": "sha1:F6CF71E927C5787B175689D9E098D54B38297B70"
+        }
+    },
+    "innosetup": true,
+    "bin": "Typora.exe",
+    "shortcuts": [
+        [
+            "Typora.exe",
+            "Typora"
+        ]
+    ]
+}
