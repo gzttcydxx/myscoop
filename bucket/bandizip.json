@@ -8,11 +8,6 @@
     },
     "url": "http://42.193.98.65:5244/d/scoop/BANDIZIP-SETUP-STD-X64.zip",
     "hash": "b805e167a4978d8c152a8e22f22c440df45e21c4aee9339a856b9661181daa31",
-    "installer": {
-        "script": [
-            "if (!(Test-Path \"$persist_dir\\Bandizip.ini\")) { New-Item \"$dir\\Bandizip.ini\" | Out-Null }"
-        ]
-    },
     "bin": "Bandizip.exe",
     "shortcuts": [
         [
@@ -20,7 +15,6 @@
             "Bandizip"
         ]
     ],
-    "persist": "Bandizip.ini",
     "checkver": {
         "url": "https://en.bandisoft.com/bandizip/history/",
         "regex": "v([\\d.]+)</font"
