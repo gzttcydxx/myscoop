@@ -1,0 +1,25 @@
+{
+    "version": "6.41.6.7",
+    "description": "(IDM) is a tool to increase download speeds by up to 5 times, resume and schedule downloads.",
+    "license": "freeware",
+    "homepage": "http://www.internetdownloadmanager.com",
+    "url": "http://42.193.98.65:5244/d/scoop/IDM.zip",
+    "hash": "a1bee221416db458fe75ef72d6073ec723f7016c1a340c92d7c79d8e59cd46ea",
+    "installer": {
+        "script": [
+            "Start-Process -FilePath \"$dir\\install.bat\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Start-Process -FilePath \"$dir\\uninstall.bat\" -Wait"
+        ]
+    },
+    "checkver": {
+        "url": "http://www.internetdownloadmanager.com/download.html",
+        "regex": "idman([\\w.-]+)\\.exe"
+    },
+    "autoupdate": {
+        "url": "http://42.193.98.65:5244/d/scoop/IDM.zip"
+    }
+}
